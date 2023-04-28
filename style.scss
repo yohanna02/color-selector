@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    display: grid;
+    place-items: center;
+
+    .modal {
+        padding: .5rem;
+        background-color: #fff;
+        width: 30%;
+        border-radius: 10px;
+
+        .modal-heading {
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+
+            button {
+                font-weight: bold;
+                font-size: 2rem;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            gap: .7rem;
+            padding: 1rem;
+        }
+
+        .modal-footer {
+            border-top: 1px solid gray;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: .6rem;
+            gap: .5rem;
+
+            button {
+                padding: .6rem 1rem;
+                border: none;
+                color: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+
+                &:first-child {
+                    background-color: #ff0000;
+                }
+
+                &:last-child {
+                    background-color: #008000;
+                }
+            }
+        }
+    }
+}
+
+.hide-modal {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 90vh;
+    gap: .5rem;
+    padding: .3rem;
+
+    .box {
+        background-color: #330044;
+    }
+}
