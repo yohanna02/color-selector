@@ -76,4 +76,14 @@ body {
 }
 .container .box {
   background-color: #330044;
+  cursor: pointer;
+}
+.container .copied {
+  cursor: copy;
+}
+.container .dragging {
+  border-radius: 50%;
+}
+.container .hover {
+  border: 2px solid #ff0000;
 }/*# sourceMappingURL=style.css.map */
